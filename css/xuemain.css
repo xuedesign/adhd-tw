@@ -1,10 +1,36 @@
 @charset "utf-8";
+/*-- Created By
+   ##############               ###############   
+    ##############             ###############    
+    ##############             ##############     
+     ##############           ##############      
+      ##############          #############       
+       #############         ##############       
+        #############       ##############        
+        ##############      #############         
+         ###############################          
+         ###############################          
+        #################################         
+        ##############     ##############         
+       ##############       ##############        
+       ##############        ##############       
+      ##############         #######           
+     ###############          ##############      
+     ##############           ###############     
+    ######      
+    ##############              ##############    
+   ##############               ##############
+          
+                 xuedesign studio 
+             https://www.xuedesign.tw/
+--*/
+
 /**
 *
-* @project    xuedesign studio
+* @project    ADHD Taiwan
 * @Author     Elmo Woo <hello@xuedesign.tw>
 * @copyright  2018 xuedesign studio
-* @version    v1.0 - 201801
+* @version    v1.0 - 201806
 *
 *=====================================
 * 0. Reset重置
@@ -28,52 +54,8 @@
 reset重置
 =====================================
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	/*font: inherit;*/
-	vertical-align: baseline;
-	background: transparent;}
-	
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section { display: block}
+@import url("reset.css");
 
-body { line-height: 1}
-ol, ul { list-style: none}
-blockquote, q {	quotes: none}
-blockquote:before, blockquote:after,
-q:before, q:after { content: ''; content: none;}
-
-/* remember to define focus styles! 移除連結虛線 */
-:focus {outline: none}
-/*::-moz-focus-inner { border: none}*/
-
-/* remember to highlight inserts somehow! */
-ins { text-decoration: none}
-del {text-decoration: line-through}
-
-/*tables still need 'cellspacing="0"' in the markup */
-table {	border-collapse: collapse; border-spacing: 0}
-
-/*固定box尺寸，不會受padding和邊框粗細影響*/
-*{-webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box}
 
 /*
 =====================================
@@ -84,35 +66,24 @@ html { font-size:62.5% }
 body{
 	margin: 0;
 	padding:0;
-	background: rgb(29,183,255);
-	font-family: "Microsoft JhengHei","PingFangTC-Regular", Arial, Helvetica, sans-serif;
-    /*Microsoft JhengHei：微軟正黑體；PingFangSC-Regular：蘋方TC*/
+	font-family: "xingothic-tc","Microsoft JhengHei","PingFangTC-Regular", Arial, Helvetica, sans-serif;
 	font-size: 1rem; /* 1rem=10px */
-	color:#565555}
-a:link {text-decoration:underline; color:#00adee}
-a:visited {text-decoration:underline; color:#8c8c8c}
-a:hover {text-decoration:none; color:#F50}
+	color:#191919}
+a:link {text-decoration:underline; color:rgb(29,108,179)}
+a:visited {text-decoration:underline; color:rgb(151,61,146)}
+a:hover {text-decoration:none; color:rgb(255, 85, 0)}
 form{margin:0; padding:0}
 image{border:0}
 .clean{ clear:both}
 .hidden{ display:none}
 
 /*頁面反白設定*/
-::selection { background: #126db4; color: #fff}
-::-moz-selection { background: #126db4; color: #fff}
+::selection { background: rgb(29,108,179); color: #fff}
+::-moz-selection { background: rgb(29,108,179); color: #fff}
 img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 
 /*justffont載入設定*/
-/*.jf-loading #wrap { 
-      opacity: 0;
-      visibility: hidden}
-.jf-active #wrap { 
-      opacity: 1;
-      visibility: visible}
-.jf-inactive #wrap {
-      opacity: 1;
-      visibility: visible}*/
 .jf-active *, 
 .jf-inactive *{ 
     transition: opacity 0s linear;
