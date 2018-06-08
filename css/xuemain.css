@@ -69,9 +69,9 @@ body{
 	font-family: "xingothic-tc","Microsoft JhengHei","PingFangTC-Regular", Arial, Helvetica, sans-serif;
 	font-size: 1rem; /* 1rem=10px */
 	color:#191919}
-a:link {text-decoration:underline; color:rgb(29,108,179)}
+/*a:link {text-decoration:underline; color:rgb(29,108,179)}
 a:visited {text-decoration:underline; color:rgb(151,61,146)}
-a:hover {text-decoration:none; color:rgb(255, 85, 0)}
+a:hover {text-decoration:none; color:rgb(255, 85, 0)}*/
 form{margin:0; padding:0}
 image{border:0}
 .clean{ clear:both}
@@ -97,18 +97,103 @@ img::-moz-selection { background: transparent}
 全站結構
 =====================================
 */
-#wrap{
+#wrap,
+header,
+#main-nav,
+footer{
     display: block;
-    width: 96%;
-    margin: 2% auto;
-    background: rgb(247,247,247)}
+    width: 100%}
+header{
+    height: 155px;
+    background: url(../images/bg_top.jpg) top center}
+footer{
+    height: 95px;
+    background: rgb(17,55,95)}
+#box-top,
+#container-index{
+    display: block;
+    width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto}
+#box-top{ height: 155px}
+#main-nav{
+    height: 63px;
+    background: url(../images/bg_nav.png) repeat-x}
+#container-index{
+    min-height: 644px}
+aside{}
 
 /*
 =====================================
 選單設定
 =====================================
 */
+#main-nav ul{
+    display: block;
+    width: 1000px;
+    margin: 0 auto}
+#main-nav li{
+    display: inline-block;
+    position:relative;
+    float:left;
+    width: 192px;
+    height: 63px;
+    font-size: 2.2rem;
+    line-height: 63px;
+    text-align: center}
+#main-nav li a:link,
+#main-nav li a:visited{ 
+    color: #fff; 
+    text-decoration: none}
+#main-nav li a:hover{ 
+    color: rgb(37,176,234);
+    font-weight: normal;
+    text-decoration: none}
 
+#main-nav li ul{ display: none}
+#main-nav li:hover ul{
+    display: block;
+    width: 190px;}
+#main-nav li li{
+    width: 190px;
+    height: 58px}
+#main-nav li:hover li a,
+#main-nav li.iehover li a{
+    display: block;
+    float: none;
+    position: absolute;
+    top:0;
+    left: -45px;
+    z-index: 1000;
+    width: 190px/*210px*/;
+    height: 58px;
+    padding: 0;
+	background: rgba(17,55,95,.9);
+    font-size: 1.8rem;
+    line-height: 58px;
+    color: #fff;
+    border-bottom: 1px dashed #fff}
+#main-nav li:hover li .linesmall,
+#main-nav li.iehover li .linesmall{
+    padding-top: 8px;
+    line-height: 18px}
+#main-nav li:hover li a:hover,
+#main-nav li:hover li:hover a,
+#main-nav li.iehover li a:hover,
+#main-nav li.iehover li.iehover a {
+    font-weight: normal;
+    color: #fff;
+	background: rgb(0,62,168)}
+/*#main-nav li li.subtitle a,
+#main-nav li li.subtitle a:hover{
+    display: block;
+    width: 210px;
+	float: none;
+    padding: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(140, 172, 109)}*/
 
 /*
 =====================================
@@ -169,9 +254,17 @@ img::-moz-selection { background: transparent}
 
 /*
 =====================================
-首頁設定
+頁面設定
 =====================================
 */
+#box-top h2 a{
+    display: block;
+    width: 240px;
+    height: 155px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
 
 
 /*
