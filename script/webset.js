@@ -17,24 +17,5 @@ $("img.lazyload").lazyload();
 //wow動畫
 wow=new WOW({animateClass:"animated",offset:100,callback:function(a){console.log("WOW: animating <"+a.tagName.toLowerCase()+">")}}),wow.init();
 
-//Retina高解析影像
-retinajs();
-
-//頂端隱藏選單
-$(function(){
-	$(window).load(function(){
-		$(window).bind('scroll resize', function(){
-			var $this = $(this);
-			var $this_Top=$this.scrollTop();
-			
-			//當高度小於100時，關閉區塊	
-			if($this_Top < 150){
-				$('#top-bar').stop().animate({top:"-65px"});
-				}
-			if($this_Top > 150){
-				$('#top-bar').stop().animate({top:"0px"});
-						
-			}
-		}).scroll();
-	});
-});
+//banner輪播
+var swiper=new Swiper(".swiper-container",{spaceBetween:30,centeredSlides:!0,autoplay:{delay:3500,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});

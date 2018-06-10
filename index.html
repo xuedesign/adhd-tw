@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="format-detection" content="telephone=no">
 <meta name="description" content="我們成立臺灣專注力研究學會，旨在提高公眾對專注力失調及注意力不足過動症 (Attention Deficit Hyperactivity Disorder)的相關情緒與網癮問題的關注和認識，以促進兒童得到專業的心理教育和發展機會。"/>
@@ -16,10 +16,10 @@
 <meta property="og:description" content="我們成立臺灣專注力研究學會，旨在提高公眾對專注力失調及注意力不足過動症 (ADHD)的相關情緒與網癮問題的關注和認識，以促進兒童得到專業的心理教育和發展機會。" />
 <link rel="shortcut icon"  href="images/favicon.ico"/>
 <link rel="icon" href="images/favicon.ico"/>
-<link rel="apple-touch-icon" href="images/icon@2x.png">
+<link rel="apple-touch-icon" href="images/icon@2x.png"/>
 <title>臺灣專注力研究學會(CHADD)│關懷注意力不足過動症，促進兒童專業心理教育</title>
-<link rel="stylesheet" href="css/xuemain.css"/>
-<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css">
+<link rel="stylesheet" href="css/xuemain.css">
+<link rel="stylesheet" href="css/swiper.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-oi8o31xSQq8S0RpBcb4FaLB8LJi9AT8oIdmS1QldR8Ui7KUQjNAnDlJjp55Ba8FG" crossorigin="anonymous">
 <link rel="stylesheet" href="css/xuemobile.css">
 <script async src="https://s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-55441.js"></script>
@@ -48,7 +48,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <nav id="main-nav">
         <ul>
-            <li><a href="#" title="了解ADHD">了解ADHD</a>
+            <li><a href="#" class="hvr-grow" title="了解ADHD">了解ADHD</a>
                 <ul>
                     <li><a href="about-ADHD.html" title="什麼是ADHD">什麼是ADHD</a></li>
                     <li><a href="diagnosis-of-low-sequelae.html" title="過低診斷後遺症">過低診斷後遺症</a></li>
@@ -56,34 +56,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <li><a href="for-chihd.html" title="關於ADHD-兒童">關於ADHD-兒童</a></li>
                     <li><a href="for-adult.html" title="關於ADHD-成人">關於ADHD-成人</a></li>
                     <li><a href="medical-treatement.html" title="藥物治療">藥物治療</a></li></ul></li>
-            <li><a href="#" title="最新消息">最新消息</a>
+            <li><a href="#" class="hvr-grow" title="最新消息">最新消息</a>
                 <ul>
                     <li><a href="events.html" title="活動資訊">活動資訊</a></li>
                     <li><a href="news.html" title="相關新聞">相關新聞</a></li>
                     <li><a href="events-highlights.html" title="活動花絮">活動花絮</a></li></ul></li>
-            <li><a href="#" title="學術活動">學術活動</a>
+            <li><a href="#" class="hvr-grow" title="學術活動">學術活動</a>
                 <ul>
                     <li><a href="academic-events.html" title="年度活動表">年度活動表</a></li>
                     <li><a href="seminar.html" title="國內研討會">國內研討會</a></li></ul></li>
-            <li><a href="#" title="常見問題集">常見問題集</a>
+            <li><a href="#" class="hvr-grow" title="常見問題集">常見問題集</a>
                 <ul>
                     <li><a href="qa.html" title="Q &amp; A">Q &amp; A</a></li>
                     <li><a href="article-list.html" title="文章分享">文章分享</a></li></ul></li>
-            <li><a href="contact.html" title="了解ADHD">聯絡我們</a></li></ul>
+            <li><a href="contact.html" class="hvr-grow" title="了解ADHD">聯絡我們</a></li></ul>
     </nav>
     
        
     <div id="container-index">
-        <div id="box-index"></div>
-        <aside></aside>    
+        <div id="box-index">
+            
+            <!--Banner輪播-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/banner_01.jpg" alt="*"></div>
+                  <div class="swiper-slide"><img src="images/banner_02.jpg" alt="*"></div>
+                  <div class="swiper-slide"><img src="images/banner_03.jpg" alt="*"></div>
+                  <div class="swiper-slide"><img src="images/banner_04.jpg" alt="*"></div>
+                  <div class="swiper-slide"><img src="images/banner_05.jpg" alt="*"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div><!-- end// Banner輪播-->      
+            
+            <!--文章連結-->       
+            <section id="link-article">
+                <div class="link-item">
+                    <h3><span class="link-title-01"></span>成立背景</h3>
+                    <div class="link-main">
+                        <p>本學會成立之任務是協助家長更正確的認識“注意力不足症候群”的相關問題，針對兒童青少年的專注力和情緒障礙問題，作觀念上的糾正。</p>
+                        <p><a href="about-us.html">詳細內容></a></p>
+                    </div>
+                </div>
+                <div class="link-item">
+                    <h3><span class="link-title-02"></span>使命和目標</h3>
+                    <div class="link-main">
+                        <p>本學會成立之任務是協助家長更正確的認識“注意力不足症候群”的相關問題，針對兒童青少年的專注力和情緒障礙問題，作觀念上的糾正。</p>
+                        <p><a href="our-vision.html">詳細內容></a></p>
+                    </div>
+                </div>
+                <div class="link-item">
+                    <h3><span class="link-title-03"></span>組織架構</h3>
+                    <div class="link-main">
+                        <p>本學會成立之任務是協助家長更正確的認識“注意力不足症候群”的相關問題，針對兒童青少年的專注力和情緒障礙問題，作觀念上的糾正。</p>
+                        <p><a href="organizational-chart.html">詳細內容></a></p>
+                    </div>
+                </div>
+                <div class="link-item">
+                    <h3><span class="link-title-04"></span>聯絡我們</h3>
+                    <div class="link-main">
+                        <p>本學會成立之任務是協助家長更正確的認識“注意力不足症候群”的相關問題，針對兒童青少年的專注力和情緒障礙問題，作觀念上的糾正。</p>
+                        <p><a href="contact.html">詳細內容></a></p>
+                    </div>
+                </div>    
+            </section>    
+            <!-- end// 文章連結-->        
+        </div>
+        
+        <aside id="linkbox-index">
+            <a href="http://www.chadd.org/" title="國際CHADD學會" rel="external"><img src="images/banner-link_01.jpg" alt="The National Resource on ADHD"></a>
+            <a href="https://thebrainplace.weebly.com/" title="The Brain Place" rel="external"><img src="images/banner-link_02.jpg" alt="The Brain Place"></a>    
+        </aside>
+        <div class="clean"></div>    
     </div>
+    
+    
     <footer>
-        <P>學會地址 : 台北市中山北路二段92號   學會Email : abcd@gmail.com</P>
-        <P>&copy; 2018 by Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD). All Rights Reserved.</P>    
+        <div class="foot-item">   
+            <P>學會地址 : 台北市中山北路二段92號   學會Email : <a href="mailto:abcd@gmail.com">abcd@gmail.com</a><br>
+            &copy; 2018 by Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD). All Rights Reserved.</P>
+            <a href="https://www.facebook.com/%E5%8F%B0%E7%81%A3%E5%B0%88%E6%B3%A8%E5%8A%9B%E7%A0%94%E7%A9%B6%E5%AD%B8%E6%9C%83-1153789587979097/" title="前往學會FB粉絲專頁" rel="external"><i class="fab fa-facebook-square"></i></a>
+            <span class="clean"></span>
+        </div>   
     </footer>
 </div><!--// end #wrap -->    
 
-<script defer src="js/require.js" data-main="js/main"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="script/swiper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min.js"></script>
+<script src="https://cdn.rawgit.com/graingert/WOW/34712a3d/dist/wow.min.js"></script>
+<script src="script/webset.js"></script>
 <script type="application/ld+json">
   { 「@context」 : 「https://schema.org」,
 	「@type」 : 「Organization」, 

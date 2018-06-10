@@ -5,8 +5,8 @@ require.config({
     paths: {
         //jQuery總碼
         "jquery": "https://code.jquery.com/jquery.min",
-        //漢字標準格式 https://css.hanzi.co/manual/
-　　　　　"hanzi": "https://cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min",
+        //Banner輪播
+        "slider": "https://cdn.jsdelivr.net/npm/swiper@4.3.3/dist/js/swiper.min",
 　　　　　//圖片延遲載入
         "lazyload": "https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min",
         //物件載入動畫
@@ -22,17 +22,17 @@ require.config({
 });
 
 require([
-        'jquery', 
-        'hanzi', 
+        'jquery',
+        'slider',
         'lazyload', 
         'wow'], 
     function (
         $, 
-        hanzi,
+        slider,
         wow, 
         lazyload, 
         ){
-    
+        
     // 另開視窗
     function externalLinks() { 
      if (!document.getElementsByTagName) return; 
@@ -52,5 +52,7 @@ require([
     //wow動畫
     new WOW().init();
     //wow=new WOW({animateClass:"animated",offset:100,callback:function(a){console.log("WOW: animating <"+a.tagName.toLowerCase()+">")}}),wow.init();
+    
+    //Banner輪播
 　　
 });
