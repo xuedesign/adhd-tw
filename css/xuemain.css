@@ -349,25 +349,28 @@ footer{
     margin-top: 30px}
 .link-item{
     display: inline-block;
-    width: 45%;
-    margin: 0 4% 5% 0}
+    vertical-align: top;
+    width: 47.5%;
+    margin: 0 2% 3% 0}
 .link-item:nth-child(2),
 .link-item:nth-child(4){
-    margin-right: 0}
+    margin: 0 0 0 2%}
 .link-item h3{
     font-size: 2.2rem;
-    line-height: 3rem;
+    line-height: 4rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    margin-bottom: 0;
     color: rgb(54,110,170)}
-.link-item p{
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 500}
 .link-main{
     display: block;
+    min-height: 50px;
     border: 1px solid #366eaa;
     padding: 15px}
+.link-main p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    text-align: justify}
 .link-title-01,
 .link-title-02,
 .link-title-03,
@@ -375,12 +378,32 @@ footer{
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: url(../images/icon-title.png) no-repeat;
-    margin-right: 5px}
-.link-title-01{}
-.link-title-02{}
-.link-title-03{}
-.link-title-04{}
+    margin-right: 5px;
+    vertical-align: sub}
+.link-title-01{
+    background: url(../images/icon-title_03.png) no-repeat;
+    background-size: contain}
+.link-title-02{
+    background: url(../images/icon-title_04.png) no-repeat;
+    background-size: contain}
+.link-title-03{
+    background: url(../images/icon-title_02.png) no-repeat;
+    background-size: contain}
+.link-title-04{
+    background: url(../images/icon-title_01.png) no-repeat;
+    background-size: contain}
+.index-more a:link,
+.index-more a:visited{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: rgb(54,110,170);
+    text-decoration: none;
+    padding-top: 5px}
+.index-more a:hover{
+    font-weight: 700;
+    color: rgb(238,93,9);
+    text-decoration: none}
 
 
 
