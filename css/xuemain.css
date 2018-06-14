@@ -39,13 +39,12 @@
 * 3. 選單設定
 * 4. 按鈕設定
 * 5. 頁面設定
-*   5.1首頁
-*   5.2關於學會
-* 6. 作品圖片輪播
-* 7. animate
-* 8. overlay-menu
-* 9. 自訂scrollbar
-*10. 返回頂端
+*       5.1 首頁
+*       5.2 關於學會
+*       5.3 了解ADHD
+* 6. 表格設定
+* 7. 自訂scrollbar
+* 8. 返回頂端
 *=====================================
 **/
 
@@ -87,16 +86,13 @@ img::-moz-selection { background: transparent}
 /*justffont載入設定*/
 .jf-loading body { /*載入中不顯示*/
       opacity: 0;
-      visibility: hidden;
-}
+      visibility: hidden}
 .jf-active body { /*如果處理成功，直接顯示*/
       opacity: 1;
-      visibility: visible;
-}
+      visibility: visible}
 .jf-inactive body {/*如果處理失敗，直接顯示*/
       opacity: 1;
-      visibility: visible;
-}
+      visibility: visible}
 /*
 .jf-active *, 
 .jf-inactive *{ 
@@ -163,6 +159,10 @@ header{
     display: block;
     float: right;
     width: 751px}
+#myarticle{
+    display: block;
+    width: 100%;
+    padding-left: 40px}
 #cookiebar{ 
     display: block; 
     width: 100%; 
@@ -225,7 +225,7 @@ footer{
     display: inline-block;
     position:relative;
     float:left;
-    width: 192px;
+    width: 166px;/*192px*/
     height: 63px;
     font-size: 2rem;
     line-height: 63px;
@@ -243,7 +243,7 @@ footer{
     display: block;
     width: 190px;}
 #main-nav li li{
-    width: 190px;
+    width: 180px;
     height: 58px}
 #main-nav li:hover li a,
 #main-nav li.iehover li a{
@@ -309,8 +309,8 @@ footer{
     margin: 0 auto;
     text-decoration: none}
 .mybtn-xl{ 
-    width: 180px;
-    padding: 15px 10px}
+    width: 380px;
+    padding: 4px 5px}
 .mybtn-l{ 
     width: 160px;
     padding: 15px 10px}
@@ -490,6 +490,14 @@ footer{
 #page-main img{
     display: block;
     margin: 0 auto 8px auto}
+#page-main h4{
+    font-size: 2rem;
+    color: #ee5d09;
+    padding-bottom: 8px}
+#page-main h5{
+    font-size: 1.8rem;
+    color: #7c1f31;
+    padding: 8px 0}
 #page-main p{
     font-size: 1.6rem;
     line-height: 2.25rem;
@@ -504,6 +512,55 @@ footer{
     border-bottom: 1px dashed #c4c1c1;
     list-style: circle}
 
+/*了解ADHD*/
+#about-adhd{
+    display: block;
+    float: left}
+#tab-title{
+    display: block;
+    float: right;
+    padding-top: 8px}
+#tab-title a:link,
+#tab-title a:visited{
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #5d5d5d;
+    text-decoration: none;
+    padding: 3px 15px;
+    margin-left: 8px;
+    background: #e1e1e1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+#tab-title a.nowin,
+#tab-title a:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #0952b5}
+
+/*
+=====================================
+表格設定
+=====================================
+*/
+.mytable{
+    display: table;
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid #b7b7b7}
+.mytable th{
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 10px;
+    background: #84d4f7;
+    border: 1px solid #fff}
+.mytable td{
+    border: 1px solid #c3c1c1;
+    font-size: 1.5rem;
+    padding: 10px}
+.mytable tr:nth-child(odd){ background: #ededed}
+.mytable td:nth-child(n+2){ text-align: center}
 
 
 /*

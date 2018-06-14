@@ -14,8 +14,8 @@ $LAB
 })
 
 //totop
-.script("/script/lib/jquery.ui.totop.js")
-.script("/script/lib/easing.js").wait(function(){
+.script("script/lib/jquery.ui.totop.js")
+.script("script/lib/easing.js").wait(function(){
     $(document).ready(function(){$().UItoTop({easingType:"easeOutQuart"})}); 
 })
 
