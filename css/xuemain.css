@@ -76,6 +76,7 @@ form{margin:0; padding:0}
 image{border:0}
 .clean{ clear:both}
 .hidden{ display:none}
+.t-important{ color: #ee5d09}
 
 /*頁面反白設定*/
 ::selection { background: rgb(29,108,179); color: #fff}
@@ -112,7 +113,8 @@ header,
 #main-nav,
 footer{
     display: block;
-    width: 100%}
+    width: 100%;
+    min-width: 1024px}
 header{
     height: 155px;
     background: url(../images/bg_top.jpg) top center}
@@ -208,8 +210,8 @@ footer{
 .foot-item i{
     display: block;
     float: left;
-    padding-left: 15px;
-    font-size: 3.8em}
+    padding: 12px 0 0 15px;
+    font-size: 3em}
 .foot-item i:hover{ color: rgb(37,176,234)}
 
 /*
