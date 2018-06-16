@@ -186,10 +186,11 @@ header{
 footer{
     height: 95px;
     background: rgb(17,55,95);
-    padding-top: 32px}
+    padding-top: 32px;
+    overflow: hidden}
 .foot-item{
     display: block;
-    width: 40%;
+    width: 55%;
     margin: 0 auto}
 .foot-item p{
     display: block;
@@ -206,10 +207,9 @@ footer{
 .foot-item a:hover{
     color: #fff;
     text-decoration: underline}
-.icon-fb{ float: left}
 .foot-item i{
     display: block;
-    float: left;
+    float: right;
     padding: 12px 0 0 15px;
     font-size: 3em}
 .foot-item i:hover{ color: rgb(37,176,234)}
@@ -243,9 +243,9 @@ footer{
 #main-nav li ul{ display: none}
 #main-nav li:hover ul{
     display: block;
-    width: 190px;}
+    width: 170px;}
 #main-nav li li{
-    width: 180px;
+    width: 170px;
     height: 58px}
 #main-nav li:hover li a,
 #main-nav li.iehover li a{
@@ -253,7 +253,7 @@ footer{
     float: none;
     position: absolute;
     top:-2px;
-    left: 0/*-45px*/;
+    left: -5px/*-45px*/;
     z-index: 1000;
     width: 190px/*210px*/;
     height: 58px;
@@ -335,18 +335,7 @@ footer{
     -webkit-transition: all 0.5s ease 0s;
     /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;}
-
-@keyframes mousemove {
-    0%   { margin-top: 85px }
-    50%  { margin-top: 100px }
-    100% { margin-top: 84px }
-}
-@-webkit-keyframes mousemove {
-    0%   { margin-top: 85px }
-    50%  { margin-top: 100px }
-    100% { margin-top: 84px }
-}
+    transition: all 0.5s ease 0s}
 
 /*
 =====================================
@@ -491,7 +480,8 @@ footer{
     vertical-align: sub}
 #page-main img{
     display: block;
-    margin: 0 auto 8px auto}
+    max-width: 750px;
+    margin: 0 auto 15px auto}
 #page-main h4{
     font-size: 2rem;
     color: #ee5d09;
@@ -505,14 +495,16 @@ footer{
     line-height: 2.25rem;
     margin-bottom: 20px;
     text-align: justify}
-#page-main ul{
+#page-main ul,
+#page-main ol{
     margin: 0 40px 30px}
+#page-main ul li{list-style: circle}
+#page-main ol li{list-style: decimal}
 #page-main li{
     font-size: 1.6rem;
     line-height: 2.4rem;
     padding: 8px 0;
-    border-bottom: 1px dashed #c4c1c1;
-    list-style: circle}
+    border-bottom: 1px dashed #c4c1c1}
 
 /*了解ADHD*/
 #about-adhd{
@@ -540,6 +532,49 @@ footer{
     color: #fff;
     text-decoration: none;
     background: #0952b5}
+.pot-blue,
+.pot-purple,
+.pot-orange,
+.pot-glay{ padding-right: 8px}
+.pot-blue{ color: #92b3fd}
+.pot-purple{ color: #c790fa}
+.pot-orange{ color: #fdb592}
+.pot-glay{ color: #b7b7b7}
+
+/*最新消息*/
+#bar-year{
+    display: block;
+    width: 100%;
+    border-top:1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 5px 15px}
+#bar-year ul{
+    margin: 0}
+#bar-year li{
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    border-bottom: none;
+    list-style: none}
+#bar-year a:link,
+#bar-year a:visited{
+    padding: 3px 15px;
+    margin: 0 15px;
+    color: #191919;
+    text-decoration: none;
+    background: #e7e7e7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+#bar-year a:hover,
+#bar-year a.nowat{
+    color: #fff;
+    background: #39a4f1;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease 0s;
+    /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s}
 
 /*
 =====================================
@@ -552,18 +587,99 @@ footer{
     margin-bottom: 25px;
     border: 1px solid #b7b7b7}
 .mytable th{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     font-weight: 500;
     padding: 10px;
-    background: #84d4f7;
-    border: 1px solid #fff}
+    background: #aae1f8;
+    border: 1px solid #fff;
+    vertical-align: middle}
 .mytable td{
     border: 1px solid #c3c1c1;
     font-size: 1.5rem;
-    padding: 10px}
+    line-height: 2.1rem;
+    padding: 10px;
+    vertical-align: middle}
 .mytable tr:nth-child(odd){ background: #ededed}
 .mytable td:nth-child(n+2){ text-align: center}
 
+.table-event{
+    display: table;
+    width: 100%;
+    margin: 25px 0;
+    border: none}
+.table-event tr{ 
+    border-bottom: 1px solid #b7b7b7}
+.table-event tr:nth-child(0){ border-bottom: none}
+.table-event tr:nth-child(odd){ background: #ededed}
+.table-event th{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    padding: 10px;
+    background: #aae1f8;
+    border: 1px solid #fff;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+.table-event td{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    padding: 10px;
+    vertical-align: middle}
+.table-event td:nth-child(1){ text-align: center}
+.table-event a:link{ color: #0096ff}
+.table-event a:visited{ 
+    color: #7e7e7e; 
+    text-decoration: none}
+.table-event a:hover{ color: #f40; text-decoration: none}
+
+#bar_PageNumber,
+#bar_PageNext,
+#bar_PageTruner{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center}
+#bar_PageTruner{ display: none}
+#bar_PageNumber a:link{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #444545;
+    text-decoration: none;
+    padding: 0 30px;
+    border-right: 1px solid #bfbfbf}
+#bar_PageNext a:link{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #444545;
+    text-decoration: none;
+    padding: 0 30px;
+    border-right: 1px solid #bfbfbf}
+#bar_PageNumber a:last-child,
+#bar_PageNext a:last-child{
+    border-right: none}
+#bar_PageNumber a:visited,
+#bar_PageNext a:visited{
+    color: #8e8e8e;
+    text-decoration: none}
+#bar_PageNumber a:hover,
+#bar_PageNext a:hover{
+    color: #fff;
+    background: #0096ff;
+    text-decoration: none;
+    padding: 0 30px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
 
 /*
 =====================================

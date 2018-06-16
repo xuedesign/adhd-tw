@@ -1,1 +1,12 @@
-[{"description":"403 error403","completed":false},{"description":"404 error404","completed":false},{"description":"聯絡我們 contact","completed":false},{"description":"文章分享 article-list","completed":false},{"description":"Q&A qa","completed":false},{"description":"國內研討會內容 seminar-content","completed":false},{"description":"國內研討會列表 seminar","completed":false},{"description":"年度活動內容 academic-events-content","completed":false},{"description":"年度活動列表 academic-events","completed":false},{"description":"活動花絮內容 events-highlights-content","completed":false},{"description":"活動花絮列表 events-highlights","completed":false},{"description":"相關新聞內容 news-content","completed":false},{"description":"相關新聞列表 news","completed":false},{"description":"活動資訊內容 events-content","completed":false},{"description":"活動資訊列表 events","completed":false},{"description":"藥物治療 medical-treatement","completed":false},{"description":"關於ADHD-成人 for-adult","completed":true},{"description":"關於ADHD-兒童 for-chihd","completed":false},{"description":"家長和主要照顧者","completed":true}]
+[{"description":"活動花絮內容 events-highlights-content","completed":false},
+ {"description":"活動花絮列表 events-highlights","completed":false},
+ {"description":"文章分享 article-list","completed":false},
+ {"description":"Q&A qa","completed":false},
+ {"description":"聯絡我們 contact","completed":false},
+ {"description":"403 error403","completed":false},
+ {"description":"404 error404","completed":false},
+ {"description":"國內研討會內容 seminar-content","completed":true},
+ {"description":"國內研討會列表 seminar","completed":true},
+ {"description":"年度活動內容 academic-events-content","completed":true},
+ {"description":"年度活動列表 academic-events","completed":true},
+ {"description":"相關新聞內容 news-content","completed":true},{"description":"相關新聞列表 news","completed":true},{"description":"活動資訊內容 events-content","completed":true},{"description":"活動資訊列表 events","completed":true},{"description":"藥物治療 medical-treatement","completed":true},{"description":"關於ADHD-成人 for-adult","completed":true},{"description":"關於ADHD-兒童 for-chihd","completed":true},{"description":"家長和主要照顧者","completed":true}]
