@@ -4,9 +4,17 @@ $LAB
 .script("https://code.jquery.com/jquery.min.js")
 
 //圖片延遲載入
-.script("https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min.js").wait(function(){
-    $("img.lazyload").lazyload();
+//.script("https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min.js").wait(function(){
+//    $("img.lazyload").lazyload();
+//})
+
+//照片排列
+.script("https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js").wait(function(){
+    $(".grid").masonry({itemSelector:".grid-item",columnWidth:200});
 })
+
+//Lightbox
+.script("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")
 
 //區塊載入動畫
 .script("https://cdn.rawgit.com/graingert/WOW/34712a3d/dist/wow.min.js").wait(function(){
