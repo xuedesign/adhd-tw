@@ -9,9 +9,9 @@ $LAB
 //})
 
 //照片排列
-.script("https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js").wait(function(){
-    $(".grid").masonry({itemSelector:".grid-item",columnWidth:200});
-})
+//.script("https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js").wait(function(){
+//    $(".grid").masonry({itemSelector:".grid-item",columnWidth:200});
+//})
 
 //Lightbox
 .script("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")
