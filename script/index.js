@@ -16,7 +16,12 @@ $LAB
 //區塊載入動畫
 .script("https://cdn.rawgit.com/graingert/WOW/34712a3d/dist/wow.min.js").wait(function(){
     wow=new WOW({animateClass:"animated",offset:100,callback:function(a){console.log("WOW: animating <"+a.tagName.toLowerCase()+">")}}),wow.init();
-  });
+  })
+
+//行動版選單
+.script("script/lib/jquery.mmenu.min.all.js").wait(function(){
+    $(function(){$("nav#mobile").mmenu()});
+})
 
 
 // 另開視窗

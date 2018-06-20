@@ -19,6 +19,11 @@ $LAB
     $(document).ready(function(){$().UItoTop({easingType:"easeOutQuart"})}); 
 })
 
+//行動版選單
+.script("script/lib/jquery.mmenu.min.all.js").wait(function(){
+    $(function(){$("nav#mobile").mmenu()});
+})
+
 
 // 另開視窗
 function externalLinks() { 

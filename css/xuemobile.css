@@ -1,20 +1,24 @@
 @charset "utf-8";
 /**
 *
-* @project    xuedesign studio
+* @project    ADHD Taiwan
 * @Author     Elmo Woo <hello@xuedesign.tw>
 * @copyright  2018 xuedesign studio
-* @version    v1.0 - 201804
+* @version    v1.0 - 201806
 *
 **/
 
-/*這個應該是不用因為目前頁面寬度才1000
+/*
 =====================================
 平板裝置(寬>長)  for-tablet-landscape-up
 =====================================
 */
 @media (max-width:1110px) { 
-    
+#wrap,
+header,
+#main-nav,
+footer{
+   min-width: 1000px}    
 }
 
 /*
@@ -23,7 +27,29 @@
 =====================================
 */
 @media (max-width:800px) {
-    
+#wrap,
+header,
+#main-nav,
+footer{
+   min-width: 750px}
+
+#box-top,
+#container-index,
+#container-page{
+    width: 100%;
+    max-width: 750px}
+
+footer{ height: auto; padding: 32px 0 18px}
+.foot-item,
+#box-error-info{
+    width: 90%}
+.foot-item p{ width: 85%}
+.foot-item i{ width: 15%}   
+#main-nav{
+    height: 15px;
+    background-position: bottom}
+#main-nav ul{ display: none}
+#mobile{}    
 }
 
 /*

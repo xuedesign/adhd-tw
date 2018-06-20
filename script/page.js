@@ -3,6 +3,11 @@ $LAB
 //jQuery總碼
 .script("https://code.jquery.com/jquery.min.js")
 
+//行動版選單
+.script("script/lib/jquery.mmenu.min.all.js").wait(function(){
+    $(function(){$("nav#mobile").mmenu()});
+})
+
 //圖片延遲載入
 .script("https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min.js").wait(function(){
     $("img.lazyload").lazyload();
@@ -19,6 +24,10 @@ $LAB
     $(document).ready(function(){$().UItoTop({easingType:"easeOutQuart"})}); 
 })
 
+//行動版選單
+.script("script/lib/jquery.mmenu.min.all.js").wait(function(){
+    $(function(){$("nav#mobile").mmenu()});
+})
 
 // 另開視窗
 function externalLinks() { 
@@ -32,3 +41,4 @@ function externalLinks() {
  } 
 } 
 window.onload = externalLinks;
+
