@@ -30,14 +30,11 @@ footer{
 #wrap,
 header,
 #main-nav,
-footer{
-   min-width: 750px}
-
+footer{ min-width: 750px}
 #box-top,
 #container-index,
-#container-page{
-    width: 100%;
-    max-width: 750px}
+#container-page{ width: 100%; max-width: 750px}
+#box-top{position: relative}    
 
 footer{ height: auto; padding: 32px 0 18px}
 .foot-item,
@@ -49,7 +46,15 @@ footer{ height: auto; padding: 32px 0 18px}
     height: 15px;
     background-position: bottom}
 #main-nav ul{ display: none}
-#mobile{}    
+a#mobile-nav{
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 4rem;
+    color: #fff} 
 }
 
 /*
@@ -58,6 +63,13 @@ footer{ height: auto; padding: 32px 0 18px}
 =====================================
 */
 @media (max-width: 600px) {
+#wrap,
+header,
+#main-nav,
+footer{ min-width: 573px}
+#box-top,
+#container-index,
+#container-page{ width: 100%; max-width: 573px}
     
 }
 
@@ -67,7 +79,23 @@ footer{ height: auto; padding: 32px 0 18px}
 =====================================
 */
 @media (max-width: 420px) {
+#wrap,
+header,
+#main-nav,
+footer{ min-width: 355px}
+#box-top,
+#container-index,
+#container-page{ width: 100%; max-width: 355px}
+.foot-item p{ width: 68%}
     
+#box-top h2 a{
+    width: 200px;
+    height: 144px;
+    background-position: 0 12px;
+    background-size: contain;
+    margin-left: -30px}    
+a#mobile-nav{ top: 70px; right: 0} 
+
 }
 
 /*
@@ -76,6 +104,20 @@ footer{ height: auto; padding: 32px 0 18px}
 =====================================
 */
 @media (max-width: 321px) {
+#wrap,
+header,
+#main-nav,
+footer{ min-width: 300px}
+#box-top,
+#container-index,
+#container-page{ width: 100%; max-width: 300px}
+
+a#mobile-nav{
+    top: 30px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 3rem} 
     
 }
 
@@ -85,11 +127,11 @@ footer{ height: auto; padding: 32px 0 18px}
 for-retina-photo
 =====================================
 */
-@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi){
-    .foot-logo,
-    #top-menu h2 a{
-        background: url(../images/logo-footer@3x.png) no-repeat;
-        background-size: cover} 
+@media only screen and 
+(-webkit-min-device-pixel-ratio: 2.0), 
+only screen and (min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2.0), 
+(min-resolution: 192dpi){
+    
     
 }

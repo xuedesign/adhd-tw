@@ -281,6 +281,8 @@ footer{
     color: #fff;
 	background: rgb(0,62,168)}
 
+#mobile-nav{ display: none}
+
 /*懸停效果*/
 .hvr-grow {
   display: inline-block;

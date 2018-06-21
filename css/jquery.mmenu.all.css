@@ -153,8 +153,8 @@ li.mm-vertical.mm-opened > .mm-panel {
 
 .mm-listview {
   font: inherit;
-  font-size: .938em /*14px*/;
-  line-height: 20px; }
+  font-size: 1.8rem /*14px*/;
+  line-height: 24px; }
   .mm-listview a,
   .mm-listview a:hover {
     text-decoration: none; }
@@ -229,7 +229,7 @@ li.mm-vertical.mm-opened > .mm-panel {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 10px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-indent: 20px;
   line-height: 25px; }
@@ -384,10 +384,10 @@ html.mm-opening .mm-slideout {
 */
 em.mm-counter {
   font: inherit;
-  font-size: 14px;
+  font-size: 1.8rem;
   font-style: normal;
   text-indent: 0;
-  line-height: 20px;
+  line-height: 24px;
   display: block;
   margin-top: -10px;
   position: absolute;
@@ -678,7 +678,7 @@ html.mm-opened.mm-dragging #mm-blocker {
     border: none;
     border-radius: 26px;
     font: inherit;
-    font-size: 14px;
+    font-size: 1.6rem;
     line-height: 26px;
     outline: none;
     display: block;
@@ -703,7 +703,7 @@ html.mm-opened.mm-dragging #mm-blocker {
 
 .mm-noresultsmsg {
   text-align: center;
-  font-size: 21px;
+  font-size: 2.1rem;
   display: none;
   padding: 40px 0; }
 
@@ -730,7 +730,7 @@ li.mm-nosubresults > a.mm-next {
 .mm-indexer {
   background: inherit;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.5rem;
   box-sizing: border-box;
   width: 20px;
   position: absolute;
