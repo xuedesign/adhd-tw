@@ -513,6 +513,26 @@ footer{
     line-height: 2.4rem;
     padding: 8px 0;
     border-bottom: 1px dashed #c4c1c1}
+.title-01,
+.title-02,
+.title-03,
+.title-04,
+.title-05{
+    display: inline-block;
+    padding: 2px 15px;
+    margin-right: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+.title-01{ background: #9276f2}
+.title-02{ background: #3797fa}
+.title-03{ background: #fdb592}
+.title-04{ background: #c1d053}
+.title-05{ background: #eac95c}
+
 
 /*了解ADHD*/
 #about-adhd{
