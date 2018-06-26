@@ -603,6 +603,13 @@ footer{
     /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s}
+.empty-info{ 
+    display: block;
+    font-size: 2rem;
+    color: #505250;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 50px}
 
 /*活動花絮*/
 #photo-list,
@@ -839,6 +846,11 @@ footer{
     color: #7e7e7e; 
     text-decoration: none}
 .table-event a:hover{ color: #f40; text-decoration: none}
+
+.event-ddate,
+.new-ddate{ width: 10%}
+.event-name{ width: 45%}
+.event-address{ width: 45%}
 
 #bar_PageNumber,
 #bar_PageNext,
