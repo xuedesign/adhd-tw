@@ -8,6 +8,9 @@ $LAB
     $("img.lazyload").lazyload();
 })
 
+//Lightbox
+.script("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")
+
 //區塊載入動畫
 .script("https://cdn.rawgit.com/graingert/WOW/34712a3d/dist/wow.min.js").wait(function(){
     wow=new WOW({animateClass:"animated",offset:100,callback:function(a){console.log("WOW: animating <"+a.tagName.toLowerCase()+">")}}),wow.init();

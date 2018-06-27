@@ -3,15 +3,8 @@ $LAB
 //jQuery總碼
 .script("https://code.jquery.com/jquery.min.js")
 
-//圖片延遲載入
-//.script("https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min.js").wait(function(){
-//    $("img.lazyload").lazyload();
-//})
-
-//照片排列
-//.script("https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js").wait(function(){
-//    $(".grid").masonry({itemSelector:".grid-item",columnWidth:200});
-//})
+//推文按鈕
+.script("https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b32411961e2c48b")
 
 //Lightbox
 .script("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")

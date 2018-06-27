@@ -171,6 +171,7 @@ header{
     display: block;
     width: 100%;
     padding-left: 40px}
+
 #cookiebar{ 
     display: block; 
     width: 100%; 
@@ -331,7 +332,7 @@ footer{
     color: #fff;
     border-color: #fff;
     text-shadow: 0 0 15px #868686}
-.btn-right{ float: right}
+.btn-right{ float: right; margin-top: 20px}
 .btn-blue{
     color: #5e98d4;
     border-color: #5e98d4}
@@ -344,6 +345,11 @@ footer{
     /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s}
+.addthis_inline_share_toolbox{ 
+    margin: 0 5px 20px 0}
+.addthis_inline_share_toolbox_ytrj{
+    float: left;
+    margin: 20px 0 0 15px}
 
 /*
 =====================================
@@ -569,6 +575,26 @@ footer{
 .pot-orange{ color: #fdb592}
 .pot-glay{ color: #b7b7b7}
 
+.box_play{
+    display: block;
+    position: relative;
+    width: 95%;
+    margin: 15px auto}
+.box_play i{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    font-size: 15rem;
+    color: rgba(255, 255, 255, .7)}
+.box_play:hover>i{
+    color: rgba(255, 54, 54, .8);
+    transition: .7s}
+.box_play img{
+    display: block;
+    width: 100%;
+    height: auto}
+
 /*最新消息*/
 #bar-year{
     display: block;
@@ -610,6 +636,15 @@ footer{
     letter-spacing: 2px;
     text-align: center;
     margin-top: 50px}
+#newslink a:link{ 
+    color: #0096ff;
+    text-decoration: underline}
+#newslink a:visited{ 
+    color: #7e7e7e; 
+    text-decoration: none}
+#newslink a:hover{ 
+    color: #f40; 
+    text-decoration: none}
 
 /*活動花絮*/
 #photo-list,
