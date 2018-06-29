@@ -253,7 +253,7 @@ footer{
     display: block;
     width: 170px;}
 #main-nav li li{
-    width: 170px;
+    width: 190px;
     height: 58px}
 #main-nav li:hover li a,
 #main-nav li.iehover li a{
@@ -282,6 +282,11 @@ footer{
     font-weight: normal;
     color: #fff;
 	background: rgb(0,62,168)}
+#main-nav li:hover li a.forchild,
+#main-nav li.iehover li a.forchild{
+    padding: 8px 0;
+    height: 58px;
+    line-height: 22px}
 
 #mobile-nav{ display: none}
 
@@ -479,6 +484,11 @@ footer{
 #subnav span a:hover{
     color:#f40;
     text-decoration: none}
+#subnav li a:link.mutiline{
+    display: block;
+    line-height: 2rem;
+    margin: 8px 0}
+
 #page-main h1{
     font-size: 2.4rem;
     font-weight: 700;
@@ -581,20 +591,47 @@ footer{
     position: relative;
     width: 95%;
     margin: 15px auto}
-.box_play i{
+.box_play i,
+.play-right i,
+.film-left i,
+.film-right i{
     display: block;
     position: absolute;
+    color: rgba(255, 255, 255, .7)}
+.box_play i{
     top: 30%;
     left: 38%;
-    font-size: 15rem;
-    color: rgba(255, 255, 255, .7)}
-.box_play:hover>i{
+    font-size: 15rem}
+.box_play:hover>i,
+.play-right:hover>i{
     color: rgba(255, 54, 54, .8);
     transition: .7s}
 .box_play img{
     display: block;
     width: 100%;
     height: auto}
+
+.text-left{
+    display: block;
+    float: left;
+    width: 45%}
+.play-right{
+    display: block;
+    float: right;
+    width: 50%;
+    margin-top: 0}
+.play-right i{
+    top: 25%;
+    left: 35%;
+    font-size: 10rem}
+.box_film{ display: block; width: 48%}
+.film-left{ float: left}
+.film-right{ float: right}
+.film-left i,
+.film-right i{
+    top: 25%;
+    left: 35%;
+    font-size: 10rem}
 
 /*最新消息*/
 #bar-year{
