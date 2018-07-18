@@ -738,13 +738,17 @@ footer{
     height: 160px}
 
 /*QA*/
-.accordion {
+#myarticle .accordion:first-child{
+    margin-top: 60px}
+.accordion{
+    display: block;
     width: 100%;
     margin-bottom: 15px;
     padding: 15px;
     background-color: #e3e3e3;
     font-family: "xingothic-tc","Microsoft JhengHei","PingFangTC-Regular", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
+    line-height: 2rem;
     font-weight: 700;
     text-align: left;
     color: #444;
@@ -759,7 +763,7 @@ footer{
 .accordion:hover {
     background-color: #39a4f1;
     color: #fff}
-.panel {
+.panel{
     padding: 5px 20px;
     display: none;
     background-color: white;
@@ -965,6 +969,20 @@ footer{
     background: #0096ff;
     text-decoration: none;
     padding: 0 30px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+#bar_PageNumber span{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #fff;
+    background: #0096ff;
+    text-decoration: none;
+    padding: 0 30px;
+    border-right: 1px solid #bfbfbf;
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
