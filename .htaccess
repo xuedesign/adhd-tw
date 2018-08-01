@@ -23,10 +23,3 @@ RewriteCond %{HTTPS} !=on
 RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
 RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-##for error page
-<IfModule mod_rewrite.c>
-RewriteEngine On
-ErrorDocument 404 /error404.html
-ErrorDocument 403 /error403.html
-</IfModule>
