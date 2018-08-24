@@ -931,6 +931,9 @@ footer{
     text-decoration: none}
 .table-event a:hover{ color: #f40; text-decoration: none}
 
+.expired-event,
+.expired-event a:link{ color: #a8a8a8}
+
 #yearevent{ background: #65b5d6; color: #fff}
 .event-ddate,
 .new-ddate{ width: 10%}
